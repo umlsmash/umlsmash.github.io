@@ -13,6 +13,23 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#to_info").hide();
+				$("#to_button").click(function(){
+					$("#to_info").toggle();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#parking_food_info").hide();
+				$("#parking_food_button").click(function(){
+					$("#parking_food_info").toggle();
+				});
+			});
+		</script>
 	</head>
 	<body class="ssb4">
 		<div id="page-wrapper">
@@ -59,7 +76,10 @@
 														<table>
 															<tr>
 																<td><b>What:</b></td>
-																<td>Our weekly Super Smash Bros. 4 tournaments.</td>
+																<td>
+																	Our weekly Super Smash Bros. 4 tournaments, which includes free singles and
+																	doubles, twitch stream, and a personally designed trophy for the winner.
+																</td>
 															</tr>
 															<tr>
 																<td><b>When:</b></td>
@@ -71,7 +91,8 @@
 																<a href="https://www.google.com/maps/place/220+Pawtucket+St,+Lowell,+MA+01854/@42.650069,-71.3261972,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3a45b397382ef:0xb227708a449da7f!8m2!3d42.650069!4d-71.3240085" target="_blank">Get Directions</a></td>
 															</tr>
 														</table>
-														<table>
+														<button id="to_button">Tournament Officials</button>
+														<table id="to_info">
 															<tr>
 																<th colspan="3"><b>Tournament Officials</b></th>
 															</tr>
@@ -89,6 +110,25 @@
 																<td><b>Other:</b></td>
 																<td><center>Brandon Le</center></td>
 																<td><center>(Fat)</center></td>
+															</tr>
+														</table>
+														<button id="parking_food_button">Parking/Food Information</button>
+														<table id="parking_food_info">
+															<tr>
+																<td><b>Parking:</b></td>
+																<td>
+																	There are metered spots on the side street to the right of UCrossing (as you are looking at it from the front).
+																	These meters aren't generally checked after 6:00 PM. If you get there any earlier, you should be fine if you pay $1
+																	to the meter.
+																</td>
+															</tr>
+															<tr>
+																<td><b>Food:</b></td>
+																<td>
+																	You can get eat at Hawk's Nest (right down the hall from the venue room!). They have chicken fingers and the like,
+																	as well as chicken friend rice and lo mein. If you're planning on eating here, plan on spending ~$10 or less.
+																	If you're in the mood, they also have smoothies and frozen yogurt!
+																</td>
 															</tr>
 														</table>
 													</section>
