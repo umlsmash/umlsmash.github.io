@@ -16,17 +16,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("#to_info").hide();
-				$("#to_button").click(function(){
-					$("#to_info").toggle();
+				$("#ssbpm_parking_food_info").hide();
+				$("#ssbpm_parking_food_button").click(function(){
+					$("#ssbpm_parking_food_info").toggle();
 				});
 			});
 		</script>
 		<script>
 			$(document).ready(function(){
-				$("#parking_food_info").hide();
-				$("#parking_food_button").click(function(){
-					$("#parking_food_info").toggle();
+				$("#ssbpm_how_to_find_info").hide();
+				$("#ssbpm_how_to_find_button").click(function(){
+					$("#ssbpm_how_to_find_info").toggle();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#ssbpm_to_info").hide();
+				$("#ssbpm_to_button").click(function(){
+					$("#ssbpm_to_info").toggle();
 				});
 			});
 		</script>
@@ -51,6 +59,7 @@
 											<li><a href="https://www.facebook.com/groups/1710745432531963/" target="_blank">Facebook Group</a></li>
 											<li><a href="http://umlmelee.challonge.com" target="_blank">Challonge Brackets</a></li>
 											<li><a href="http://twitch.tv/umlsmash" target="_blank">Twitch Channel</a></li>
+											<li><a href="https://www.youtube.com/channel/UCSaVNuF3tGefXocPNtQQrCw" target="_blank">YouTube Channel</a></li>
 											<li><a href="https://smash.gg/tmg" target="_blank">TMG Signup</a></li>
 										</ul>
 									</li>
@@ -103,44 +112,58 @@
 														</tr>
 														<tr>
 															<td><b>When:</b></td>
-															<td>Every Friday<br>~7:00 PM</td>
+															<td>Every Friday<br>8:00 PM</td>
 														</tr>
 														<tr>
 															<td><b>Where:</b></td>
-															<td>USuites - 
-															<a href="https://www.google.com/maps/dir//University+Suites,+Aiken+Street,+Lowell,+MA/@42.6513976,-71.3245277,15.12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89e3a4460787ac1f:0xa606aa4b5afecc80!2m2!1d-71.3170698!2d42.6517353" target="_blank">Get Directions</a></td>
+															<td>UCrossing 158 - 
+															<a href="https://www.google.com/maps/place/220+Pawtucket+St,+Lowell,+MA+01854/@42.650069,-71.3261972,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3a45b397382ef:0xb227708a449da7f!8m2!3d42.650069!4d-71.3240085" target="_blank">Get Directions</a></td>
 														</tr>
-														</table>
-														<button id="to_button">Tournament Officials</button>
-														<table id="to_info">
-															<tr>
-																<th colspan="3"><b>Tournament Officials</b></th>
-															</tr>
-															<tr>
-																<td><b>Head:</b></td>
-																<td><center>Anna Mayorskiy</center></td>
-																<td><center>(Harmak)</center></td>
-															</tr>
-														</table>
-														<button id="parking_food_button">Parking/Food Information</button>
-														<table id="parking_food_info">
-															<tr>
-																<td><b>Parking:</b></td>
-																<td>
-																	There are metered spots on the side street to the right of USuites (as you are looking at it from the front).
-																	These meters aren't generally checked after 6:00 PM. If you get there any earlier, you should be fine if you pay $1
-																	to the meter.
-																</td>
-															</tr>
-															<tr>
-																<td><b>Food:</b></td>
-																<td>
-																	You can get eat at Hawk's Nest (right down the hall from the venue room!). They have chicken fingers and the like,
-																	as well as chicken friend rice and lo mein. If you're planning on eating here, plan on spending ~$10 or less.
-																	If you're in the mood, they also have smoothies and frozen yogurt!
-																</td>
-															</tr>
-														</table>
+													</table>
+													<button id="ssbpm_parking_food_button">Parking/Food Information</button>
+													<table id="ssbpm_parking_food_info">
+														<tr>
+															<td><b>Parking:</b></td>
+															<td>
+																As you look at the front entrance of UCrossing, there is a parking lot to the right, across Salem Street, a small
+																side street. After 5:00 PM, this lot is open to the public. If the gate is down, press the call button at the
+																intercom and ask them to let you in.
+															</td>
+														</tr>
+														<tr>
+															<td><b>Food:</b></td>
+															<td>
+																Crossroads Cafe is right in the same building, featuring Sal's Pizza. Options include pizza, sandwiches/wraps,
+																salads, and	pastries. You can probably expect to spend ~$10 here. Right next to the cafe is a Starbucks,
+																where you can get gelato, and a mini convenience store, where you can get other snacks/drinks.
+															</td>
+														</tr>
+													</table>
+													<button id="ssbpm_how_to_find_button">How To Find</button>
+													<p id="ssbpm_how_to_find_info">
+														<b>*WE WILL HAVE SIGNS FOR YOU TO FOLLOW*</b>
+														<br>The easiest way to find UCrossing room 158 is to enter at the back of the building,
+														at the UCAPS/University Police entrance. This is across the street from the parking
+														lot and UCrossing bus stop. From this entrance, follow the hallway (near the stairs)
+														to the right, and find a door labeled 150. The tournament room is just to the right
+														from here.
+														<br>If you enter from the front entrance of UCrossing, your path will be a little more
+														complicated. You will need to go up the main stairway in the middle, continue straight
+														and cross the bridge to your left to get to the B Wing. Take the stairs on your right
+														down two floors, and follow the hallway straight ahead, and find a door labeled 150.
+														The tournament room is just to the right from here.
+													</p>
+													<button id="ssbpm_to_button">Tournament Officials</button>
+													<table id="ssbpm_to_info">
+														<tr>
+															<th colspan="3"><b>Tournament Officials</b></th>
+														</tr>
+														<tr>
+															<td><b>Head:</b></td>
+															<td><center>Anna Mayorskiy</center></td>
+															<td><center>(Harmak)</center></td>
+														</tr>
+													</table>
 													</section>
 												</div>
 											</center>
@@ -187,7 +210,7 @@
 													<header>
 														<h3>Hitbox Channel</h3>
 													</header>
-													<p>Tune in to Harmak's Hitbox channel Tuesday nights around 7:00 PM, we stream most of our weeklies!</p>
+													<p>Tune in to Harmak's Hitbox channel Friday nights, we stream most of our weeklies!</p>
 													<footer>
 														<center><a href="http://hitbox.tv/harmak" target="_blank" class="button alt">Go to Hitbox channel</a></center>
 													</footer>

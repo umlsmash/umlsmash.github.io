@@ -16,17 +16,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$("#to_info").hide();
-				$("#to_button").click(function(){
-					$("#to_info").toggle();
+				$("#ssb4_parking_food_info").hide();
+				$("#ssb4_parking_food_button").click(function(){
+					$("#ssb4_parking_food_info").toggle();
 				});
 			});
 		</script>
 		<script>
 			$(document).ready(function(){
-				$("#parking_food_info").hide();
-				$("#parking_food_button").click(function(){
-					$("#parking_food_info").toggle();
+				$("#ssb4_how_to_find_info").hide();
+				$("#ssb4_how_to_find_button").click(function(){
+					$("#ssb4_how_to_find_info").toggle();
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#ssb4_to_info").hide();
+				$("#ssb4_to_button").click(function(){
+					$("#ssb4_to_info").toggle();
 				});
 			});
 		</script>
@@ -51,6 +59,7 @@
 											<li><a href="https://www.facebook.com/groups/1710745432531963/" target="_blank">Facebook Group</a></li>
 											<li><a href="http://umlmelee.challonge.com" target="_blank">Challonge Brackets</a></li>
 											<li><a href="http://twitch.tv/umlsmash" target="_blank">Twitch Channel</a></li>
+											<li><a href="https://www.youtube.com/channel/UCSaVNuF3tGefXocPNtQQrCw" target="_blank">YouTube Channel</a></li>
 											<li><a href="https://smash.gg/tmg" target="_blank">TMG Signup</a></li>
 										</ul>
 									</li>
@@ -101,21 +110,45 @@
 																<td><b>What:</b></td>
 																<td>
 																	Our weekly Super Smash Bros. 4 tournaments, which includes free singles and
-																	doubles, twitch stream, and a personally designed trophy for the winner.
+																	doubles, Twitch stream, and a personally designed trophy for the winner.
 																</td>
 															</tr>
 															<tr>
 																<td><b>When:</b></td>
-																<td>Every Monday<br>~8:00 PM</td>
+																<td>Every Monday<br>5:00 PM (doubles)<br>7:45 PM (singles)</td>
 															</tr>
 															<tr>
 																<td><b>Where:</b></td>
-																<td>UCrossing - 
+																<td>UCrossing Club Hub - 
 																<a href="https://www.google.com/maps/place/220+Pawtucket+St,+Lowell,+MA+01854/@42.650069,-71.3261972,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3a45b397382ef:0xb227708a449da7f!8m2!3d42.650069!4d-71.3240085" target="_blank">Get Directions</a></td>
 															</tr>
 														</table>
-														<button id="to_button">Tournament Officials</button>
-														<table id="to_info">
+														<button id="ssb4_parking_food_button">Parking/Food Information</button>
+														<table id="ssb4_parking_food_info">
+															<tr>
+																<td><b>Parking:</b></td>
+																<td>
+																	As you look at the front entrance of UCrossing, there is a parking lot to the right, across Salem Street, a small
+																	side street. After 5:00 PM, this lot is open to the public. If the gate is down, press the call button at the
+																	intercom and ask them to let you in.
+																</td>
+															</tr>
+															<tr>
+																<td><b>Food:</b></td>
+																<td>
+																	Crossroads Cafe is right downstairs, featuring Sal's Pizza. Options include pizza, sandwiches/wraps,
+																	salads, and	pastries. You can probably expect to spend ~$10 here. Right next to the cafe is a Starbucks,
+																	where you can get gelato, and a mini convenience store, where you can get other snacks/drinks.
+																</td>
+															</tr>
+														</table>
+														<button id="ssb4_how_to_find_button">How To Find</button>
+														<p id="ssb4_how_to_find_info">
+															From the main entrance of the building, follow the large staircase in the middle of the room and take a right.
+															You'll see a registration table against the back wall.
+														</p>
+														<button id="ssb4_to_button">Tournament Officials</button>
+														<table id="ssb4_to_info">
 															<tr>
 																<th colspan="3"><b>Tournament Officials</b></th>
 															</tr>
@@ -133,25 +166,6 @@
 																<td><b>Other:</b></td>
 																<td><center>Brandon Le</center></td>
 																<td><center>(Fat)</center></td>
-															</tr>
-														</table>
-														<button id="parking_food_button">Parking/Food Information</button>
-														<table id="parking_food_info">
-															<tr>
-																<td><b>Parking:</b></td>
-																<td>
-																	As you look at the front entrance of UCrossing, there is a parking lot to the right, across Salem Street, a small
-																	side street. After 5:00 PM, this lot is open to the public. If the gate is down, press the call button at the
-																	intercom and ask them to let you in.
-																</td>
-															</tr>
-															<tr>
-																<td><b>Food:</b></td>
-																<td>
-																	Crossroads Cafe is right downstairs, featuring Sal's Pizza. Options include pizza, sandwiches/wraps, salads, and
-																	pastries. You can probably expect to spend ~$10 here. Right next to the cafe is a Starbucks, where you can get
-																	gelato, and a mini convenience store, where you can get other snacks/drinks.
-																</td>
 															</tr>
 														</table>
 													</section>
@@ -201,7 +215,7 @@
 													<header>
 														<h3>Twitch Channel</h3>
 													</header>
-													<p>Tune in to the UML Twitch channel Monday nights around 7:00 PM, we usually stream most of our weeklies!</p>
+													<p>Tune in to the UML Twitch channel Monday nights, we stream most of our weeklies!</p>
 													<footer>
 														<center><a href="http://twitch.tv/umlsmash" target="_blank" class="button alt">Go to Twitch channel</a></center>
 													</footer>
@@ -564,6 +578,25 @@
 												</td>
 											</tr>
 										</table>
+										<footer>
+											<h2>SkillKeeper</h2>
+											<p>
+												If you're interested in seeing more detailed statistics, take a look
+												at the SkillKeeper stats. If you've entered any UML Weeklies
+												at all since Spring 2017, you can see your matchup history with every
+												other player you have played in one convenient location.
+											</p>
+											<p>
+												<a href="downloads/skillkeeper.zip" target="_blank">Download</a>
+											</p>
+											<p>
+												After downloading, simply unzip the folder, run SkillKeeper.exe, select
+												"Load World" and choose the semester you would like to view from in the
+												Smash 4 folder. "current.bcn" contains all semesters since we began
+												tracking it. From there you can find your personal stats by selecting
+												your tag under the "View/Modify Player" tab.
+											</p>
+										</footer>
 									</article>
 									<article style="display:none" class="power rankings">
 										<header>
